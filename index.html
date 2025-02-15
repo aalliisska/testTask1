@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beardventure</title>
+  <link rel="stylesheet" href="./static/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="first">
+    <header>
+      <img class="logo" src="./static/images/logo.svg" alt="Logo">
+      <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+      <label for="burger-checkbox" class="burger"></label>
+      <nav class="navigation">
+        <a class="navigation__button" href="#home">Home</a>
+        <a class="navigation__button" href="#stories">Adventure Stories</a>
+        <a class="navigation__button" href="#guide">Guide</a>
+        <a class="navigation__button" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="home" id="home">
+      <div class="home__title">
+        <h1>
+          The Bearded Explorer's Guide to the World
+        </h1>
+        <h2>
+          Bearded adventurer explores the world stylishly.
+        </h2>
+
+        <ul class="home__ul">
+          <li class="home__li">
+            7 Wonders Visited (and 700 More on the List!)
+          </li>
+          <li class="home__li">
+            5 Years, 50 Countries, and Countless Stories
+          </li>
+          <li class="home__li">
+            150 new friends from different cultures and backgrounds
+          </li>
+        </ul>
+        <a class="home__button" href="#guide">Join the Adventure!</a>
+      </div>
+      <img class="image home__image" src="./static/images/photo1.jpeg" alt="Men">
+    </div>
+  </div>
+
+  <div class="stories" id="stories">
+    <div class="stories__header"></div>
+    <div class="stories__main">
+      <img class="image stories__main__image" src="./static/images/photo2.jpeg" alt="Men">
+      <div class="stories__main__object">
+        <ul class="stories__ul">
+          <li class="stories__li">
+            Join me as I recount my thrilling journey through the dense Amazon rainforest, where I faced unexpected
+            challenges, encountered exotic wildlife, and discovered the beauty of nature's untouched paradise.
+          </li>
+          <li class="stories__li">
+            Experience the magic of the Arctic as I share my quest to witness the mesmerizing Northern Lights in
+            Iceland, battling freezing temperatures and unpredictable weather for a glimpse of this celestial wonder.
+          </li>
+          <li class="stories__li">
+            Follow my footsteps on the legendary Inca Trail to Machu Picchu, where I navigated breathtaking landscapes,
+            ancient ruins, and the camaraderie of fellow trekkers on this unforgettable adventure.
+          </li>
+          <li class="stories__li">
+            Dive into my exhilarating underwater escapade at the Great Barrier Reef, where I explored vibrant coral
+            gardens, swam alongside majestic sea turtles, and experienced the wonders of marine life up close.
+          </li>
+        </ul>
+        <a class="stories__button" href="#guide">Join the Adventure!</a>
+      </div>
+      <img class="image stories__main__image" src="./static/images/photo3.jpeg" alt="Men">
+    </div>
+  </div>
+
+  <div class="guide" id="guide">
+    <div class="guide__form">
+      <form novalidate action="" class="post" id="post">
+        <h1 class="title">Join the Bearded Journey: Get the Guide Now!</h1>
+
+        <div class="inputting">
+          <input type="text" class="inputting__name input" name="name" id="name" placeholder="Name of the Explorer">
+          <label class="error">Name is required.</label>
+        </div>
+
+        <div class="inputting">
+          <input type="email" class="inputting__email input" name="email" id="email"
+            placeholder="Email for Adventure Updates">
+          <label class="error">Email is required.</label>
+        </div>
+
+        <div class="inputting checkbox">
+          <input class="inputting__checkbox" type="checkbox" id="newsletter" name="newsletter" value="newsletter" />
+          <label class="inputting__newsletter" for="newsletter">I'd love to receive travel inspiration and exclusive
+            content!</label>
+        </div>
+        <button form="post" type="submit" class="button" id="button">Join the Adventure!</button>
+      </form>
+      <div class="guide__form__photo">
+        <img class="men" src="./static/images/men.png" alt="Men">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer__home">
+      <nav class="navigation">
+        <a class="navigation__button" href="#home">Home</a>
+        <a class="navigation__button" href="#stories">Adventure Stories</a>
+        <a class="navigation__button" href="#guide">Guide</a>
+        <a class="navigation__button" href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="footer__contacts" id="contact">
+      <img class="logo" src="./static/images/logo.svg" alt="Logo">
+      <div class="footer__contacts__icons">
+        <a href="#">
+          <img class="contact" src="./static/images/inst.svg" alt="Instagram">
+        </a>
+        <a href="#">
+          <img class="contact" src="./static/images/tik.svg" alt="Tik Tok">
+        </a>
+        <a href="#">
+          <img class="contact" src="./static/images/link.svg" alt="LinkedIn">
+        </a>
+        <a href="#">
+          <img class="contact" src="./static/images/facebook.svg" alt="Facebook">
+        </a>
+        <a href="#">
+          <img class="contact" src="./static/images/telegram.svg" alt="Telegram">
+        </a>
+        <a href="#">
+          <img class="contact" src="./static/images/youtube.svg" alt="Youtube">
+        </a>
+      </div>
+      <button class="footer__contacts__button">
+        Join the Adventure!
+      </button>
+    </div>
+    <div class="footer__texts">
+      <span class="footer__texts__text rights">© 2024, Copyright.</span>
+      <a class="footer__texts__text file">Privacy policy</a>
+      <a class="footer__texts__text file">Terms of Use</a>
+    </div>
+  </footer>
+  <script src="./static/js/script.js"></script>
+</body>
+
+</html>
